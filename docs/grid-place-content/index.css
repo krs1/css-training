@@ -1,0 +1,10 @@
+.container{
+    height: 100dvh;
+    width: 100dvw;
+    background-color: aquamarine;
+    display: grid;
+    /* 行列自体の配置を中央 */
+    place-content: center;
+    /* セル内でアイテムを中央揃え */
+    place-items: center;
+}

@@ -1,0 +1,31 @@
+.box {
+    margin-inline: auto;
+  }
+  
+  /* その他のスタイル */
+  
+  body {
+    padding: 24px;
+    font-family: sans-serif;
+  }
+  
+  .container {
+    border: 1px solid #ccc;
+    padding: 24px;
+  }
+  
+  .box {
+    background-color: rgb(29, 155, 240);
+    color: white;
+    display: grid;
+    font-size: 20px;
+    font-weight: bold;
+    height: 200px;
+    place-content: center;
+    width: 300px;
+  }
+
+.contents{
+    max-width: 300px;
+    margin-inline: auto;
+}
