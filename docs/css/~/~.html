@@ -1,0 +1,44 @@
+<link rel="stylesheet" href="./index.css"></link>
+
+<ul>
+    <li><a href="../../">戻る</a></li>
+    <li><a href="https://developer.mozilla.org/ja/docs/Web/CSS/Subsequent-sibling_combinator">MWD</a></li>
+    <li><a href="https://saruwakakun.com/html-css/reference/selector#section1">参考</a></li>
+</ul>
+  
+<pre>
+    <h1>構文</h1>
+    <div>
+        /* 結合子の前後の空白はオプションですが、推奨されます。 */
+        先行する要素 ~ 選択される要素 { スタイルプロパティ }
+    </div>
+    後続兄弟結合子(~)は、１つ目に定義された要素の後（直後以外にも反応する）に</br>
+    ２つ目に定義された要素が来た場合に</br>
+    ２つ目に定義された要素にスタイルを適用するセレクタ
+    <code>
+        .container{
+            div ~ p{
+                color: red;
+            }
+        }
+    </code>
+</pre>
+
+<div class="container">
+    以下はdiv要素の後続にpタグがある場合は赤色になる例
+    <p>pタグ（赤くならない）</p>
+    <div>
+        divタグ
+    </div>
+    <p>
+        pタグ(赤くなる)
+    </p>
+    <div>
+        <p>div in pタグ（赤くならない）</p>
+    </div>
+    <p>
+        pタグ(赤くなる)
+    </p>
+
+</div>
+

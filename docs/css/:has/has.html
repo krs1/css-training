@@ -1,0 +1,43 @@
+<link rel="stylesheet" href="./index.css"></link>
+
+<ul>
+    <li><a href="../../">戻る</a></li>
+    <li><a href="./has+.html">hasと+セレクタの合せ技</a></li>
+    <li><a href="https://coliss.com/articles/build-websites/operation/css/has-pseudo-class.html">参考</a></li>
+</ul>
+  
+<pre>
+    :hasセレクタは親要素が指定している子要素を持っている場合に親にスタイルを適用できるセレクタ</br>
+    なのでflex,gridなどのレイアウトを組む際に便利なセレクタ
+
+    また、:has(要素1, 要素2)と定義することで要素１と要素２のどちらを持っている場合スタイルを適用することができる
+
+    <code>
+        .container{
+            ul{
+                li :has(h1){
+                    color: red;
+                }
+            }
+        }
+    </code>
+</pre>
+
+<div class="container">
+    以下はli内にh1がある場合は赤色になる例
+    <ul>
+        <li>
+            <h1>H1赤くなる</h1>
+        </li>
+        <li>
+            <h2>H2赤くならない</h2>
+        </li>
+        <li>
+            <h3>H3赤くならない</h3>
+        </li>
+        <li>
+            <h4>H4赤くならない</h4>
+        </li>
+    </ul>
+</div>
+

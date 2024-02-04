@@ -1,0 +1,12 @@
+.container {
+    ul {
+        li:has(h1){
+            color: red;
+        }
+    }
+}
+.container-plus{
+    div:has(+ p){
+        color: red;
+    }
+}

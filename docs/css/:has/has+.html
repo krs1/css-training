@@ -1,0 +1,32 @@
+<link rel="stylesheet" href="./index.css"></link>
+
+<ul>
+    <li><a href="../../">戻る</a></li>
+    <li><a href="./has.html">:has</a></li>
+</ul>
+  
+<pre>
+    ある要素の後に続いている場合にスタイルを適用できたりする
+    <code>
+        .container{
+            ul{
+                li :has(h1){
+                    color: red;
+                }
+            }
+        }
+    </code>
+</pre>
+
+<div class="container-plus">
+    以下はdivの次にpタグがある場合は赤色になる例
+    <p>pタグ（赤くならない）</p>
+    <div>divタグ（赤くなる）</div>
+    <p>pタグ（赤くならない）</p>
+    <div>divタグ（赤くならない）</div>
+    <div>divタグ（赤くならない）</div>
+    <div>
+        <p>div in pタグ（赤くならない）</p>
+    </div>
+</div>
+
